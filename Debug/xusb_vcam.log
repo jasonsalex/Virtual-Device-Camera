@@ -1,0 +1,26 @@
+﻿  virt_dev.cpp
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.cpp(63): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.cpp(282): warning C4018: “>”: 有符号/无符号不匹配
+  uvc_vcam.cpp
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(299): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(299): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(465): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(465): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(500): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(500): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(585): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(585): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(641): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(641): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(689): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(770): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+  main.cpp
+  正在生成代码...
+  xusb_vcam.vcxproj -> C:\Users\Administrator\Desktop\Virtual-Device-Camera\Debug\xusb_vcam.exe
+  xusb_vcam.vcxproj -> C:\Users\Administrator\Desktop\Virtual-Device-Camera\Debug\xusb_vcam.pdb (Full PDB)

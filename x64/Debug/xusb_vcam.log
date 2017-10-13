@@ -1,0 +1,30 @@
+﻿  virt_dev.cpp
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.cpp(63): error C2664: “char *strcpy(char *,const char *)”: 无法将参数 2 从“WCHAR [1]”转换为“const char *”
+  c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.cpp(63): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.cpp(83): error C2664: “HANDLE CreateFileW(LPCWSTR,DWORD,DWORD,LPSECURITY_ATTRIBUTES,DWORD,DWORD,HANDLE)”: 无法将参数 1 从“char [260]”转换为“LPCWSTR”
+  c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.cpp(83): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+  uvc_vcam.cpp
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(299): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(299): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(465): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(465): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(500): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(500): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(585): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(585): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(641): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\uvc_struct.h(641): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+  c:\users\administrator\desktop\virtual-device-camera\src\virt_dev.h(93): note: 默认构造函数或 copy/move 赋值运算符将忽略此成员
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(170): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(177): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(395): warning C4244: “=”: 从“__int64”转换到“__le16”，可能丢失数据
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(689): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\desktop\virtual-device-camera\src\uvc_vcam.cpp(770): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+  main.cpp
+c:\users\administrator\desktop\virtual-device-camera\src\main.cpp(109): error C2664: “int DrawTextW(HDC,LPCWSTR,int,LPRECT,UINT)”: 无法将参数 2 从“const char *”转换为“LPCWSTR”
+  c:\users\administrator\desktop\virtual-device-camera\src\main.cpp(109): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+  正在生成代码...

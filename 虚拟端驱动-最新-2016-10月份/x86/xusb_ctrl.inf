@@ -1,0 +1,87 @@
+;
+;
+;    Fanxiushu 2016 , 虚拟USB控制器驱动和根集线器驱动
+;
+;
+[Version]
+Signature="$Windows NT$"
+Class=USB
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%FXS%
+DriverVer=04/25/2016,1.0.0.1
+CatalogFile=xusb_virt.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+xusb_virt.sys  = 1,,
+
+;*****************************************
+;
+;*****************************************
+
+
+[Manufacturer]
+%FXS%=Standard,NTamd64
+
+[Standard]
+%DeviceDesc2%=Ctrl_Device2, %HardwareId2%
+%DeviceDesc1%=Ctrl_Device1, %HardwareId1%
+
+[Standard.NTamd64]
+%DeviceDesc2%=Ctrl_Device2, %HardwareId2%
+%DeviceDesc1%=Ctrl_Device1, %HardwareId1%
+
+[Ctrl_Device2.NT]
+CopyFiles=Drivers_Dir2
+
+[Ctrl_Device1.NT]
+CopyFiles=Drivers_Dir1
+
+[Drivers_Dir2]
+xusb_controller.sys, xusb_virt.sys
+
+[Drivers_Dir1]
+xusb_roothub.sys, xusb_virt.sys
+
+;-------------- Service installation
+[Ctrl_Device2.NT.Services]
+AddService = xusb_controller,0x00000002, xusb_Service_Inst2
+
+[Ctrl_Device1.NT.Services]
+AddService = xusb_roothub,0x00000002, xusb_Service_Inst1
+
+; -------------- xusb_virt driver install sections
+[xusb_Service_Inst2]
+DisplayName    = %SVCDESC2%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\xusb_controller.sys
+LoadOrderGroup = Extended Base
+
+[xusb_Service_Inst1]
+DisplayName    = %SVCDESC1%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\xusb_roothub.sys
+LoadOrderGroup = Extended Base
+
+
+[Strings]
+FXS = "Fanxiushu"
+DiskId1 = "Fanxiushu Virtual USB Device System Installation Disk1"
+DeviceDesc2 = "Fanxiushu Virtual USB Host Controller"
+DeviceDesc1 = "Fanxiushu Virtual USB Root HUB"
+SVCDESC2 = "Fanxiushu Virtual USB Host Controller Driver"
+SVCDESC1 = "Fanxiushu Virtual USB Root HUB Driver"
+
+HardwareId2 = "PCI\VEN_37FA&DEV_FE09&SUBSYS_9976A077&REV_88"
+HardwareId1 = "vFxsUSB\vRootHUB&Virtual&Fanxiushu"
+
+

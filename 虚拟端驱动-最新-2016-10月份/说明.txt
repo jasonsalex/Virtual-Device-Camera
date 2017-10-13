@@ -1,0 +1,20 @@
+USB Virtual Device 是USB虚拟设备目录，
+driver子目录是驱动，driver\x64是64位驱动，driver\x86是32位驱动，都没有签名，
+64位系统需要签名才能安装，或者让windows处于测试驱动模式下,如何设置win10和win7的测试驱动模式，请查阅相关资料。
+
+winxp安装驱动办法：在控制面板-》添加新硬件，然后从磁盘安装，
+win7， win10 安装办法：打开设备管理器-》添加过时硬件，
+
+安装的时候，会出现 两个设备：
+
+Fanxiushu Virtual USB Bus System Device ( USB ONLY )
+Fanxiushu Virtual USB Bus System Device ( USB TREE )
+
+第一个是只模拟USB虚拟设备，没有USB虚拟控制器和根集线器
+第二个是完整的USB设备堆栈，包括控制器和根集线器，
+安装第2个的时候，会出现 Fanxiushu Virtual USB Host Controller 和
+Fanxiushu Virtual USB Root HUB 两个未知设备，
+这两个设备也需要驱动，给这两个设备更新驱动，选择磁盘安装，到同样的目录，选择 xusb_ctrl.inf。
+相信经常安装驱动的你会很轻易安装的。
+
+驱动安装成功之后，就可以运行xusb_vcam，模拟出虚拟USB摄像头，
